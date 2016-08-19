@@ -1,54 +1,198 @@
 
 
-\subsection{Introduction to LibreCAD}
+\subsection{Introduction to FreeCAD}
 
-LibreCAD  is  a  fully  comprehensive  2D  CAD  application  that  you  can  download  and  install  for  free.
-There  is  a  large  base  of  satisfied  LibreCAD  users  worldwide,  and  it  is  available  in  more  than  20
-languages  and  for  all  major  operating  systems,  including  Microsoft  Windows,  Mac  OS  X  and  Linux
-(Debian,  Ubuntu,  Fedora,  Mandriva,  Suse  ...).  Librecad  is  an  application  for  computer   aided  design
-(cad)  in  two  dimensions  (2d).  with  librecad  you  can  create  technical  drawings  such  as  plans  for
-buildings, interiors, mechanical parts or schematics and diagrams.\\
+FreeCAD is a general purpose parametric 3D CAD modeler. The development 
+is completely Open Source (LGPL License). FreeCAD is aimed directly at 
+mechanical engineering and product design but also fits in a wider range 
+of uses around engineering, such as architecture or other engineering specialties.
 
-The  app  is  great  for  industrial  designers,  but  anyone  who  wants  to  learn  how  to  make  2D  CAD
-drawings will like this program.
-For  a  free  software,  LibreCAD  gives  you  a  lot  of  tools  to  work  with.  New  users  will be able to create
-basic  drawings,  while  advanced  users  can  make  engineering  plans   with  the   software.  Layers  can  be
-added,  ideal  for  complex  drawings.  The  provided  tools  are  sufficient  for  producing  high   precision
-drawings.  You  can  start  drawings  from  scratch.  But  it  is  also  easy  to  put  in  splines,  ellipses,  arcs,  lines
-and  circles.  A  single  item  can  have  several  iterations.  For  instance,  you  have  4  modes  for  a  rectangle
-parameter.\\
+FreeCAD features tools similar to Catia, SolidWorks or Solid Edge, and 
+therefore also falls into the category of MCAD, PLM, CAx and CAE. It is a 
+feature based parametric modeler with a modular software architecture which 
+makes it easy to provide additional functionality without modifying the core system.
 
-The  different  shapes  can  be  combined  easily.  LibreCAD  also  has  a  powerful  zoom  tool  that  lets  you
-look  at  models  at  different  distances.  This  is  essential  for  designers  who  are  going  to  make  life­size
-copies  of  a  drawing.  There  are  three  tabs  above  the  working  area.  The  first  tab  is  for  changing  color,
-useful for layer definition. The other tab is for changing size and the third for workspace customization.
-LibreCAD  also  has  grids  which  are  extremely  useful  for  those  new  to  CAD.  Once  you  have   made  the
-basic  object,  you can customize it in many ways. Scaling is particularly easy here. Also worth mentioning
-here is the "Explode text into letters" effect. It is a special feature that will come in handy ations.
-LibreCAD  allows  you  to  put  horizontal  or vertical restrictions on completed models. Relative zeros may
-be locked, useful for ending and starting points. All in all, it is powerful, free CAD application.
-You can download, install and distribute LibreCAD freely, with no fear of copyright infringement.\\
+As with many modern 3D CAD modelers it has many 2D components in order 
+to sketch 2D shapes or extract design details from the 3D model to create 
+2D production drawings, but direct 2D drawing (like AutoCAD LT) is not the 
+focus, neither are animation or organic shapes (like Maya, 3ds Max, Blender 
+or Cinema 4D), although, thanks to its wide adaptability, FreeCAD might 
+become useful in a much broader area than its current focus.
+
+FreeCAD makes heavy use of all the great open-source libraries that exist 
+out there in the field of Scientific Computing. Among them are OpenCascade, 
+a powerful CAD kernel, Coin3D, an incarnation of Open Inventor, Qt, the world-famous 
+UI framework, and Python, one of the best scripting languages available. 
+FreeCAD itself can also be used as a library by other programs.
+
+FreeCAD is also fully multi-platform, and currently runs flawlessly on 
+Windows and Linux/Unix and Mac OSX systems, with the exact same look and 
+functionality on all platforms.
+
+\subsection{About FreeCAD}
+FreeCAD is maintained and developed by a community of enthusiastic developers 
+and users (see the contributors page). They work on FreeCAD voluntarily, 
+in their free time. They cannot guarantee that FreeCAD contains or will 
+contain everything you might wish, but they will usually do their best! 
+The community gathers on the FreeCAD forum, where most of the ideas and 
+decisions are discussed.
+
 %----------------------------------------------------------------------------------------
 \
 \
 \
 %-------------------------------------------------------------------
 
-\subsection{LibreCAD's features}
+\subsection{FreeCAD's features}
+\subsubsection{Key features}
 \begin{itemize}
-\item  It's free – no worry about license costs or annual fees.
-\item No  language  barriers  –  it's  available  in  a  large  number  of  languages,  with  more  being  added
-continually.
-\item GPLv2  public  license  –  you  can  use  it,  customize  it,  hack  it  and  copy  it  with  free  user  support
-15and  developer  support  from  our  active  worldwide  community  and  our  experienced  developer
-team.
-\item LibreCAD  is an Open Source community­driven project: development is open to new talent and
-new  ideas,  and  our  software  is  tested  and  used  daily  by  a  large  and  devoted  user  community;
-you, too, can get involved and influence its future development.
-\item LibreCAD  is  an  Application  for  Computer  Aided  Design  (CAD)  in  two  dimension  (2D).  With
-LibreCAD  you  can  create  technical  drawings  such  as  plans  for  building,  interiors,  mechanical
-parts or schematics and diagrams.
+\item A complete Open CASCADE Technology-based geometry kernel allowing 
+complex 3D operations on complex shape types, with native support for 
+concepts like brep, nurbs curves and surfaces, a wide range of geometric 
+entities, boolean operations and fillets, and built-in support of STEP and 
+IGES formats.
+\item A full parametric model. All FreeCAD objects are natively parametric, 
+which means their shape can be based on properties or even depend on other 
+objects, all changes being recalculated on demand, and recorded by the 
+undo/redo stack. New object types can be added easily, that can even be 
+fully programmed in Python.
+\item A modular architecture that allow plugins (modules) to add functionality
+to the core application. Those extensions can be as complex as whole new
+applications programmed in C++ or as simple as Python scripts or self-recorded
+macros. You have complete access from the Python built-in interpreter,
+macros or external scripts to almost any part of FreeCAD, being geometry 
+creation and transformation, the 2D or 3D representation of that geometry 
+(scenegraph) or even the FreeCAD interface.
+\item Import/export to standard formats such as STEP, IGES, OBJ, STL, DXF, 
+SVG, STL, DAE, IFC or OFF, NASTRAN, VRML in addition to FreeCAD's native 
+Fcstd file format. The level of compatibility between FreeCAD and a given 
+file format can vary, since it depends on the module that implements it.
+\item A Sketcher with constraint-solver, allowing to sketch geometry-constrained 
+2D shapes. The sketcher currently allows you to build several types of 
+constrained geomerty, and use them as a base to build other objects throughout 
+FreeCAD.
+\item A Robot simulation module that allows to study robot movements. The 
+robot module already has an extended graphical interface allowing GUI-only 
+workflow.
+\item A Drawing sheets module that permit to put 2D views of your 3D 
+models on a sheet. This modules then produces ready-to-export SVG or PDF 
+sheets. The module is still sparse but already features a powerful Python 
+functionality.
+\item A Rendering module that can export 3D objects for rendering with 
+external renderers. Currently only supports povray and LuxRender, but is 
+expected to be extended to other renderers in the future.
+\item An Architecture module that allows BIM-like workflow, with IFC 
+compatibility. The making of the Arch module is heavily discussed by the 
+community here.
 \end{itemize}
+
+\subsubsection{Genral features}
+\begin{itemize}
+\item \textbf{FreeCAD is multi-platform.} It runs and behaves exactly the same 
+way on Windows Linux and Mac OSX platforms.
+\item \textbf{FreeCAD is a full GUI application.} FreeCAD has a complete Graphical 
+User Interface based on the famous Qt framework, with a 3D viewer based on
+Open Inventor, allowing fast rendering of 3D scenes and a very accessible 
+scene graph representation.
+\item \textbf{FreeCAD also runs as a command line application,} with low memory 
+footprint. In command line mode, FreeCAD runs without its interface, but 
+with all its geometry tools. It can be, for example, used as server to 
+produce content for other applications.
+\item \textbf{FreeCAD can be imported as a Python module,} inside other applications 
+that can run python scripts, or in a python console. Like in console mode, 
+the interface part of FreeCAD is unavailable, but all geometry tools are accessible.
+\item \textbf{Workbench concept:} In the FreeCAD interface, tools are grouped 
+by workbenches. This allows to display only the tools used to accomplish 
+a certain task, keeping the workspace uncluttered and responsive, and the 
+application fast to load.
+\item \textbf{Plugin/Module framework for late loading of features/data-types.} 
+FreeCAD is divided into a core application and modules, that are loaded 
+only when needed. Almost all the tools and geometry types are stored in 
+modules. Modules behave like plugins, and can be added or removed to an 
+existing installation of FreeCAD.
+\item \textbf{Parametric associative document objects:} All objects in a FreeCAD 
+document can be defined by parameters. Those parameters can be modified 
+on the fly, and recomputed anytime. The relationship between objects is 
+also stored, so modifying one object also modifies its dependent objects.
+\item \textbf{Parametric primitive creation} (box, sphere, cylinder, etc).
+\item Graphical \textbf{modification operations} like translation, rotation, 
+scaling, mirroring, offset (trivial or after Jung/Shin/Choi) or shape 
+conversion, in any plane of the 3D space.
+\item \textbf{Boolean operations} (union, difference, intersect)
+\item Graphical creation of \textbf{simple planar geometry} like lines, wires, 
+rectangles, arcs or circles in any plane of the 3D space.
+\item Modeling with straight or revolution \textbf{extrusions, sections} and 
+\textbf{fillets}.
+\item Topological components like \textbf{vertices, edges, wires} and \textbf{planes} 
+(via python scripting).
+\item \textbf{Testing and repairing} tools for meshes: solid test, non-two-manifolds 
+test, self-intersection test, hole filling and uniform orientation.
+\item \textbf{Annotations} like texts or dimensions
+\item \textbf{Undo/Redo framework:} Everything is undo/redoable, with access to 
+the undo stack, so multiple steps can be undone at a time.
+\item \textbf{Transaction management:} The undo/redo stack stores document transactions 
+and not single actions, allowing each tool to define exactly what must be 
+undone or redone.
+\item \textbf{Built-in scripting framework:} FreeCAD features a built-in Python 
+interpreter, and an API that covers almost any part of the application, 
+the interface, the geometry and the representation of this geometry in the 
+3D viewer. The interpreter can run single commands up to complex scripts, 
+in fact entire modules can even be programmed completely in Python.
+\item \textbf{Built-in Python console} with syntax highlighting, autocomplete 
+and class browser: Python commands can be issued directly in FreeCAD and 
+immediately return results, permitting scriptwriters to test functionality 
+on the fly, explore the contents of the modules and easily learn about 
+FreeCAD internals.
+\item \textbf{User interaction mirroring on the console:} Everything the user 
+does in the FreeCAD interface executes python code, which can be printed 
+on the console and recorded in macros.
+\item \textbf{Full macro recording and editing:} The python commands issued when 
+the user manipulates the interface can then be recorded, edited if needed, 
+and saved to be reproduced later.
+\item \textbf{Compound (ZIP based) document save format:} FreeCAD documents 
+saved with .fcstd extension can contain many different types of information, 
+such as geometry, scripts or thumbnail icons. The .fcstd file is itself a 
+zip container, so a saved FreeCAD file has already been compressed.
+\item \textbf{Fully customizable/scriptable Graphical User Interface.} The Qt-based 
+interface of FreeCAD is entirely accessible via the python interpreter. 
+Aside from the simple functions that FreeCAD itself provides to workbenches, 
+the whole Qt framework is accessible too, allowing any operation on the GUI, 
+such as creating, adding, docking, modifying or removing widgets and toolbars.
+\item \textbf{Thumbnailer} (Linux systems only at the moment): The FreeCAD 
+document icons show the contents of the file in most file manager applications 
+such as gnome's nautilus.
+\item \textbf{A modular MSI installer} allows flexible installations on Windows 
+systems. Packages for Ubuntu systems are also maintained.
+\end{itemize}
+
+%----------------------------------------------------------------------
+\
+\
+\
+%----------------------------------------------------------------------
+
+\subsection{Application and User Interface}
+Like almost everything else in FreeCAD, the user interface part (Gui) is 
+separated from the base application part (App). This is also valid for 
+documents. The documents are also made of two parts: the Application document, 
+which contains our objects, and the View document, which contains the 
+representation on screen of our objects.
+
+Think of it as two spaces, where the objects are defined. Their constructive 
+parameters (is it a cube? a cone? which size?) are stored in the Application 
+document, while their graphical representation (is it drawn with black lines? 
+with blue faces?) are stored in the View document. Why is that? Because 
+FreeCAD can also be used WITHOUT graphical interface, for example inside 
+other programs, and we must still be able to manipulate our objects, even 
+if nothing is drawn on the screen.
+
+Another thing that is contained inside the View document are 3D views. 
+One document can have several views opened, so you can inspect your document 
+from several points of view at the same time. Maybe you would want to see a 
+top view and a front view of your work at the same time? Then, you will have 
+two views of the same document, both stored in the View document. Creating 
+new views or closing views can be done from the View menu or by right-clicking 
+on a view tab.
 
 %----------------------------------------------------------------------------------------
 \
@@ -62,42 +206,59 @@ parts or schematics and diagrams.
 \
 \
 %--------------------
+FreeCAD's focus is to allow you to make high-precision 3D models, to keep 
+tight control over those models (being able to go back into modelling history 
+and change parameters), and eventually to build those models (via 3D printing, 
+CNC machining or even construction worksite). It is therefore very different 
+from some other 3D applications made for other purposes, such as animation 
+film or gaming. Its learning curve can be steep, specially if this is 
+your first contact with 3D modeling. If you are struck at some point, don't 
+forget that the friendly community of users on the FreeCAD forum might be 
+able to get you out in no time.
 
-LibreCAD  started  as  a   project  to  build  CAM  capabilities  into  the  community  version  of  QCad  for  use with  a  Mechmate  CNC  router.  LibreCAD  is  a  version  of  QCad  CE  ported  to  Qt4.  Since  QCad  CE was  built  around  the  outdated  Qt3  library,  it  had  to  be  ported  to  Qt4  before  additional  enhancements. This gave rise to CADuntu.\\
+The workbench you will start using in FreeCAD depends on the type of job 
+you need to do: If you are going to work on mechanical models, or more 
+generally any small-scale objects, you'll probably want to try the PartDesign 
+Workbench. If you will work in 2D, then switch to the Draft Workbench, or the 
+Sketcher Workbench if you need constraints. If you want to do BIM, launch 
+the Arch Workbench. If you are working with ship design, there is a special 
+Ship Workbench for you. And if you come from the OpenSCAD world, try 
+the OpenSCAD Workbench.
 
-The  project  was  known as CADuntu only for a  couple of months before the community decided that the
-name  was  inappropriate.  After  some  discussion  within  the  community  and  research  on  existing  names, CADuntu was renamed to LibreCAD.\\
+You can switch workbenches at any time, and also customize your favorite 
+workbench to add tools from other workbenches.
 
-Porting  the  rendering  engine  to  Qt4  proved  to  be  a  large  task,  so  LibreCAD  initially  still  depended  on the  Qt3  support  library.  The  Qt4  porting  was  completed  eventually  during  the  development  of  2.0.0 series,  thanks  to  our  master  developer  Rallaz,  and  LibreCAD  has  become  Qt3  free except in the 1.0.0 series.\\
 
 \subsection{Downloading Source Code}
-
-Fired up the terminal because you need to install the qt4 development libraries, tools, compiler and git.\\ \\
-
-\$\ sudo apt-get install g++ gcc make git-core libqt4-dev qt4-qmake \
-libqt4-help qt4-dev-tools libboost-all-dev libmuparser-dev libfreetype6-dev \\
-
-\$\ sudo apt-get build-dep librecad\\ \\
-Clone the git repository of LibreCAD in Desktop (You can use any Directory)\\
-
-\$\ git clone https://github.com/gaganjyot/LibreCAD\_3.git \\ 
-
-Now you can run qmake (or qmake-qt4) to create a makefile and run make to compile LibreCAD.
-Make sure that you are in the folder (Librecad).\\
-
-\$\ cd LibreCAD \\
-
-\$\ qmake-qt4 librecad.pro\\
-
-\$\ make\\
-
-librecad.pro  is  a  project  file.  qmake  creates  a  makefile.  Make  command  will  compile  the  project.
-Compiling  LibreCAD  might  take  a while,   depending  on  the  speed  of  your  computer,  but  just  let  it  run
-until it finishes.\\
-
-To finally run LibreCAD, execute the following commands:\\\\
-
-\$\ cd unix\\
-
-\$\ ./librecad
-
+Fired up the terminal because you need to install the qt4 development libraries, tools, compiler and git.
+\begin{lstlisting} 
+git clone https://github.com/FreeCAD/FreeCAD free-cad-code
+\end{lstlisting} 
+Getting the dependencies:
+\begin{lstlisting}                                                      
+sudo apt install build-essential cmake python python-matplotlib 
+libtool libcoin80-dev libsoqt4-dev libxerces-c-dev libboost-dev 
+libboost-filesystem-dev libboost-regex-dev libboost-program-options-dev 
+libboost-signals-dev libboost-thread-dev libboost-python-dev 
+libqt4-dev libqt4-opengl-dev qt4-dev-tools python-dev python-pyside 
+pyside-tools oce-draw libeigen3-dev libqtwebkit-dev libshiboken-dev 
+libpyside-dev libode-dev swig libzipios++-dev libfreetype6 
+libfreetype6-dev liboce-foundation-dev liboce-modeling-dev 
+liboce-ocaf-dev liboce-visualization-dev liboce-ocaf-lite-dev 
+libsimage-dev checkinstall python-pivy python-qt4 doxygen libspnav-d              
+\end{lstlisting} 
+Compiling:
+Now first we’ll create a separate directory for storing our build files. 
+This will be out-of-source build. Which means the source code directory 
+will not get modified and there won’t be any issue with git.
+\begin{lstlisting} 
+mkdir build
+cd build
+cmake ../free-cad-code
+make
+\end{lstlisting} 
+Execution:
+Execute using the following command:
+\begin{lstlisting}                                                      
+./bin/FreeCAD
+\end{lstlisting}                                                      

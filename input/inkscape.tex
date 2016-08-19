@@ -1,0 +1,100 @@
+\section{Inkscape}
+Inkscape is an open source drawing tool for creating and editing SVG graphics. More than just a text vector
+editor, Inkscape provides a WYSIWYG interface for manipulation of vector images, allowing the artist to
+express himself freely. While other free and proprietary software exists with similar capabilities, Inkscape
+provides an interface to directly manipulate the underlying SVG code, which allows one to be certain that the
+code is in compliance with W3C standards. Since the beginning of its development, the Inkscape project has
+been a very active, providing stability for the current software and growth of capacities in the future.
+Like other drawing programs, Inkscape offers creation of basic shapes (such as ellipses, rectangles, stars,
+polygons and spirals) as well as the ability to transform and manipulate these basic shapes by rotation,
+stretching and skewing.
+
+Inkscape also offers functionality to manipulate objects more precisely by adjusting node points and curves.
+These functions are indispensable to useful drawing software, and allow the advanced artist to freely create
+what he imagines.
+
+The properties of objects can either be manipulated individually and precisely through the XML editor, or
+more generally in an intuitive fashion by input devices such as mice, pen tablets or even touch screen.
+In addition, Inkscape allows one to insert text and bitmaps (such as PNG, another W3C recommended bitmap
+image format) into an image as well as perform some basic editing functions on them. If further bitmap
+editing is required, other tools may be used (such as the GIMP) on images before importing them or after. In
+fact, if a linked bitmap is edited in another program, Inkscape will reflect these changes once the SVG is
+reloaded.
+
+All of these characteristics make Inkscape a model drawing application, especially considering its flexibility
+and many other capabilities. Its strict compliance with the W3C SVG standards allow excellent portability of
+images to many applications and platforms on which these applications are used.
+
+\subsection{About SVG}
+Those who work with graphics for internet use are familiar with the problems tied to publication of images on
+the web. Traditionally, bitmap images (such as JPG or GIF) have been the only option for use in such
+documents, with the disadvantage that these images are either too large for quick transfer or, if they are small
+or highly compressed to reduce file-size, of poor quality.
+
+As a solution to this problem, Macromedia created the Flash image format. While Flash satisfactorily solved
+the main problems inherent to bitmap images, there has been discontent for some users that the common
+vector format for the web is dependent solely on Macromedia for development of the file format and
+software. In order to address this discontent and provide an open option for vector graphics, the W3C created
+the SVG file format, making a freely usable vector format available to everyone.
+
+Most image files are only able to be read by specific software that renders the image. SVG, however, is
+described in XML and CSS, and its files can be opened and edited in any ASCII text editor. While it is
+possible to create SVG images in this manner, it is highly unproductive and unintuitive. SVG editors and
+renderers have the ability to easily open and manipulate SVG files without a special interpreter.
+
+\subsection{Objectives of the SVG Format}
+The advantages of SVG are the same as for any vector image: high-quality images that are smooth and crisp
+ability to resize the image to any dimensions without diminishing quality, which is impossible with bitmap
+images. The SVG standard also defines animation, and with a little use of Javascript, one can make SVG
+interactive. Finally, since SVG is written in XML, it is possible to create graphics based on data that is stored
+in other XML-based formats, such as graphs, charts and maps. Despite its benefits, there is a lack of usable
+software to create and edit SVG files and take full advantage of its capacities; for this reason, SVG is not as
+usable at the moment as Flash.
+
+\subsection{Export PDF macro}
+It uses Inkscape to do the SVG to PDF conversion. Customize ToolsBar 
+instructions can be used to add tool button in Drawing WB and therefore 
+to be able to use Export PDF macro with ease when needed.
+\begin{lstlisting}  
+import os
+import subprocess
+from PySide import QtGui
+
+obj = FreeCADGui.Selection.getSelection()[0]
+
+# Path to Inkscape executable
+inkscape_path = "/usr/bin/inkscape"
+# Exported PDF file location
+file_location = os.path.expanduser("~" + os.sep + obj.Label + ".pdf")
+
+# -------------------------------------------------------------------
+try:
+  page = getattr(obj, 'PageResult')
+  except AttributeError:
+    QtGui.QMessageBox.warning(None,"Export PDF", "Page object has \
+        not been selected.")
+    else:
+        file_exists = os.path.isfile(file_location)
+            if file_exists == True:
+                QtGui.QMessageBox.warning(None,"Export PDF", "A \
+                    file with the name " + obj.Label + ".pdf already \
+                        exists:\n\n" + file_location)
+                    else:
+                         call_inkscape = [inkscape_path, "-f", \
+                            obj.PageResult,"-A", file_location]
+                         subprocess.call(call_inkscape)
+                         QtGui.QMessageBox.information(None,"Export \
+                            PDF", "Successfully exported:\n\n" + \
+                                file_location)
+\end{lstlisting}  
+
+\subsubsection{What does it do?}
+It exports drawing page to PDF file using Inkscape. Instead of bitmap 
+image inserted in PDF file elements like text are searchable and exported 
+PDF file size can be smaller when the drawings do not have big number of 
+elements in it.
+\subsubsection{How to use it}
+\begin{itemize}
+\item Select Page object in Tree View.
+\item Run Export PDF macro.
+\end{itemize}
