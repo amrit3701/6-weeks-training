@@ -10,12 +10,21 @@ bian, Ubuntu, Fedora, Mandriva, Suse ...). FreeCAD is an application for Compute
 (CAD) in three dimensions (3d). With FreeCAD you can create technical drawings such as plans
 for buildings, interiors, mechanical parts or schematics and diagrams.\\
 
-This project makes the drawings of different views of the building on the drawing sheets.
+The software to be designed will create an index model for a 3 dimensional civil structure like
+a building or any other civil engineering project. This requires a software for designing such
+structures using a computer, the one used in SIM is STAAD PRO. In STAAD PRO the engineer
+draws the structure using various graphical tools and accordingly a .STD file is created that has
+all information about the building structure. Alternatively the engineer can choose to work from
+this file only and creating the elements of the building by writing pre-defined instructions into the
+file just like a script. It is this file that serves as the fundamental requirement for SIM. SIM parses
+this file and stores the parsed information into a database which is of object orientation naturea.\\
+
+Also, this project makes the drawings of different views of the building on the drawing sheets.
 In this project, the user will be able to enter the specifications of the building through the web
 browser using Django (Python Web Framework) and on the back-end, the FreeCAD macros will
 use those input values to draw the drawings of different views of the building on different drawing
 sheets. The output of the same can then be taken by a user in SVG, PDF and fcstd formats.\\
 
-Also, this project is completely open source and the entire code is available 
+This project is completely open source and the entire code is available 
 to the user as and when required. There is also Complete developer's 
 Documentation as well as User manual alongwith it that helps using it a lot easier.

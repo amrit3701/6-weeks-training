@@ -1,17 +1,148 @@
-\section{Introduction}
+\section{Overview}
+Structure Information Modeling (SIM) is an open-source, free web-based software, developed by students
+of Testing and Consultancy Cell (TCC), under the guidance of Dr. H.S. Rai.The software to be designed will create an index model for a 3 dimensional civil structure like a building or any other civil engineering project. This requires a software for designing such
+structures using a computer, the one used in SIM is STAAD PRO. In STAAD PRO the engineer
+draws the structure using various graphical tools and accordingly a .STD file is created that has
+all information about the building structure. Alternatively the engineer can choose to work from
+this file only and creating the elements of the building by writing pre-defined instructions into the
+file just like a script. It is this file that serves as the fundamental requirement for SIM. SIM parses
+this file and stores the parsed information into a database which is of object orientation nature.
 
-The  term  computer  graphics  includes  almost  everything  on  computers  that  is  not  text  or  sound.  Today
-almost  every  computer  can  do  some  graphics,  and  people  have  even  come  to  expect  to  control  their
-computer  through  icons  and  pictures  rather  than  just  by  typing.  Here  in  our  lab  at  the  Program  of
-Computer  Graphics,  we  think  of  computer  graphics  as  drawing  pictures  on  computers,  also  called
-rendering.  The  pictures  can  be photographs, drawings, movies, or simulations ­­ pictures of things which
-do  not  yet  exist  and  maybe  could   never  exist.  Or  they  may  be  pictures  from  places  we  cannot  see
-directly,  such  as  medical  images  from  inside  your  body.  Computer  graphics  is  now  used  in  various
-fields;  for  industrial,  educational,  medical  and  entertainment  purposes.  The  aim  of  computer  graphics  is
-to  visualize  real  objects  and  imaginary  or  other  abstract  items.  In  order to visualize various things, many
-technologies  are  necessary  and  they  are  mainly  divided  into  two  types  in  computer  graphics:  modeling
-and  rendering  technologies.\\
+SIM will serve multiple users at a time. This is achieved by providing a web interface to things
+so that various user can access it from their web browsers. The user is required to make a decision
+at the home page of whether to upload a new file or open an already uploaded file. If the user
+chooses the former then the user must provide with a valid and complete STAAD PRO file for the
+system to further process.
 
+Also in this project, the user makes the drawings of different views of the building on the drawing sheets. The user
+will be able to enter the specifications of the building through the web browser and on
+the back-end, the FreeCAD macros will use those input values to draw the drawings of different
+views of the building on different drawing sheets. The output of the same can then be taken by a
+user in SVG, PDF and fcstd formats. The user will also facilitate to render the 3D model of the building on the browser screen.
+
+
+
+%The  term  computer  graphics  includes  almost  everything  on  computers  that  is  not  text  or  sound.  Today
+%almost  every  computer  can  do  some  graphics,  and  people  have  even  come  to  expect  to  control  their
+%computer  through  icons  and  pictures  rather  than  just  by  typing.  Here  in  our  lab  at  the  Program  of
+%Computer  Graphics,  we  think  of  computer  graphics  as  drawing  pictures  on  computers,  also  called
+%rendering.  The  pictures  can  be photographs, drawings, movies, or simulations ­­ pictures of things which
+%do  not  yet  exist  and  maybe  could   never  exist.  Or  they  may  be  pictures  from  places  we  cannot  see
+%directly,  such  as  medical  images  from  inside  your  body.  Computer  graphics  is  now  used  in  various
+%fields;  for  industrial,  educational,  medical  and  entertainment  purposes.  The  aim  of  computer  graphics  is
+%to  visualize  real  objects  and  imaginary  or  other  abstract  items.  In  order to visualize various things, many
+%technologies  are  necessary  and  they  are  mainly  divided  into  two  types  in  computer  graphics:  modeling
+%and  rendering  technologies.\\
+
+\section{The Existing System}
+There are few existing systems for solving this particular problem like STAAD.Pro, SAP2000 but
+they don’t have following features required by our mentor. These system were not open source
+and free web based software that were need.
+
+All exiting system suffers from at least one of the following system.\\
+\textbf{Limitations of previous system}
+\begin{itemize}
+\item No batch mode
+\item They are costly (STAAD.Pro costs nearly 80,000 rupees)
+\item Not open-source (User not modified the software)
+\item They need installation and a lot of system resources
+\item Platform dependent
+\item There is no any automations of drawing of 3D object (step-by-step approach is following for making drawings)
+\item Difficulty for taking sectional view of the object
+\item Doesn't support WebGl and IFC format
+\end{itemize}
+
+\section{User Requirement Analysis}
+For User Requirement Analysis, users of this system have been asked about possible requirements
+that this software should have and we got following resultant list of outputs-:
+
+\begin{enumerate}
+\item Provide on-line way to analysis so that individual does not have to install anything.
+\item Make it work like batch mode. so, that user can give inputs together and relax.
+\item Help M.Tech and Civil Engineer to analysis structure.
+\item Storing Staad Pro file to the database so that read data through queries.
+\item All the data of Staad Pro file is store in database like a tree. By the result it is very easy to read data.
+\item Rendering 3D model on browser without any plugin installation. 
+\item Make PDF of different views of the building 
+\end{enumerate}
+
+\section{Feasibility Analysis}
+Feasibility analysis aims to uncover the strengths and weaknesses of a project. In its simplest term,
+the two criteria to judge feasibility are cost required and value to be attained. As such, a well-
+designed feasibility analysis should provide a historical background of the project, description of the
+project or service, details of the operations and management and legal requirements. Generally,
+feasibility analysis precedes technical development and project implementation. There is some
+feasibility factors by which we can determine that project is feasible or not:
+
+\begin{itemize}
+\item \textbf{Technical feasibility}: Technological feasibility is carried out to determine whether the
+project has the capability, in terms of software, hardware, personnel to handle and fulfill the
+user requirements. This whole project is based on parsing Staad Pro file to the database and 
+on the FreeCAD and Django for user interface. Technical feasibility of this project revolves around
+the technical boundaries and limitations of the FreeCAD and Django. Structure Information Modeling (SIM) is technically feasible as it is built up in Open Source
+Environment and thus it can be run on any Open Source platform. 
+
+\item \textbf{Economic feasibility}: Economic analysis is the most frequently used method to determine
+the cost/benefit factor for evaluating the effectiveness of a new system. In this analysis we
+determine whether the benefit is gain according to the cost invested to develop the project
+or not. If benefits outweigh costs, only then the decision is made to design and implement
+the system. It is important to identify cost and benefit factors, which can be categorized as
+follows:
+
+\begin{enumerate}
+\item Development costs.
+\item Operating costs.
+\end{enumerate}
+
+Structure Information Modeling Software is also Economically feasible with 0 Development and Op-
+erating Charges as it is developed in Django framework and FreeCAD which is
+FOSS technology and the software is operated on Open Source platform.
+
+\item \textbf{Operational feasibility}: Operational feasibility is a measure of how well a project solves
+the problems, and takes advantage of the opportunities identified during scope definition
+and how it satisfies the requirements identified in the requirements analysis phase of system
+development. All the Operations performed in the software are very quick and satisfies all
+the reuirements. This project is also operational feasible as it automates the work of solving
+the problem of analysising the structures which not only saves time but also saves money as
+most of the work is done by Employees and M.Tech students is done by this software.
+
+\section{Objective of Project}
+Structure Information Modeling Software is a web based software (that means it can run on any operation system) and the main objectives of this project is to:
+\begin{enumerate}
+\item To inspire M.Tech students to automate their work and do programming
+\item Perform most of difficult Calculation work
+\item Make it work like batch mode. so, that user can give inputs together and relax.
+\item Accept inputs from the user in *.std file format
+\item Help M.Tech and Civil Engineer to analysis structure.
+\item Reduce the time for analysis.
+\item Generates the final output in the form of PDF, SVG and .fcstd
+\item Provide on-line way to analysis so that individual does not have to install anything.
+\item Adminstration login page
+\end{enumerate}
+
+\end{itemize}
+
+\begin{comment}
+\section{Introduction to STAAD Pro}
+STAAD.Pro is a general purpose structural analysis and design program with applications primarily in the building industry - commercial buildings, bridges and highway structures, industrial structures, chemical plant structures, dams, retaining walls, turbine foundations, culverts and other embedded structures, etc. The program hence consists of the following facilities to enable this task.
+
+\begin{itemize}
+\item Graphical model generation utilities as well as text editor based commands for creating the mathematical model. Beam and column members are represented using lines. Walls, slabs and panel type entities are represented using triangular and quadrilateral finite elements. Solid blocks are represented using brick elements. These utilities allow the user to create the geometry, assign properties, orient cross sections as desired, assign materials like steel, concrete, timber, aluminum, specify supports, apply loads explicitly as well as have the program generate loads, design parameters etc. 
+
+\item Analysis engines for performing linear elastic and pdelta analysis, finite element analysis, frequency extraction, and dynamic response (spectrum, time history, steady state, etc.).
+
+\item  Design engines for code checking and optimization of steel, aluminum and timber members. Reinforcement calculations for concrete beams, columns, slabs and shear walls. Design of shear and moment connections for steel members. 
+
+\item Result viewing, result verification and report generation tools for examining displacement diagrams, bending moment and shear force diagrams, beam, plate and solid stress contours, etc. 
+
+\item Peripheral tools for activities like import and export of data from and to other widely accepted formats, links with other popular softwares for niche areas like reinforced and prestressed concrete slab design, footing design, steel connection design, etc. 
+
+\item A library of exposed functions called OpenSTAAD which allows users to access STAAD.Pro’s internal functions and routines as well as its graphical commands to tap into STAAD’s database and link input and output data to third-party software written using languages like C, C++, VB, VBA, FORTRAN, Java, Delphi, etc. Thus, OpenSTAAD allows users to link in-house or third-party applications with STAAD Pro.
+\end{itemize}
+
+STAAD Pro is basically based on Finite Element Analysis and is programmed in C for carrying out the computations for Analysis and Design of a Structure. STAAD Pro works in a very user friendly environment with a option of shifting between graphical and analytical modes any time between the work.
+
+With its features it is one of the most common softwares used in industry.
 \section{Introduction to CAD}
 
 Computer-aided design (CAD) is the use of computer systems to assist in the creation, modification, analysis, or optimization of a design. CAD software is used to increase the productivity of the designer, improve the quality of design, improve communications through documentation, and to create a database for manufacturing.CAD is an important industrial art extensively used in many applications, including automotive, shipbuilding, and aerospace industries, industrial and architectural design, prosthetics, and many more. CAD is also widely used to produce computer animation for special effects in movies, advertising and technical manuals. CAD output is often in the form of electronic files for print, machining, or other manufacturing operations. CAD is also used for the accurate creation of photo simulations that are often required in the preparation of Environmental Impact Reports, in which computer-aided designs of intended buildings are superimposed into photographs of existing environments to represent what that locale will be like were the proposed facilities allowed to be built.  Computer­ Aided  Drafting  describes  the  process  of  creating  a
@@ -59,6 +190,7 @@ Fedora,  Mandriva,  Suse  ...).  FreeCAD  is  an  application  for Computer  Aid
 dimensions  (2d).  With  FreeCAD   you   can  create  technical  drawings  such  as  plans  for  buildings,  interiors,
 mechanical parts or schematics and diagrams.\\
 
+\end{comment}
 \begin{comment}
 The  app  is  great  for  industrial  designers,  but  anyone  who  wants  to  learn  how  to  make  2D  CAD
 drawings  will  like  this  program.  For  a  free  software,  LibreCAD  gives  you  a  lot  of  tools  to  work  with.

@@ -1,4 +1,4 @@
-
+\begin{comment}
 
 \subsection{Introduction to FreeCAD}
 
@@ -231,11 +231,11 @@ workbench to add tools from other workbenches.
 
 \subsection{Downloading Source Code}
 Fired up the terminal because you need to install the qt4 development libraries, tools, compiler and git.
-\begin{lstlisting} 
+\begin{verbatim} 
 git clone https://github.com/FreeCAD/FreeCAD free-cad-code
-\end{lstlisting} 
+\end{verbatim} 
 Getting the dependencies:
-\begin{lstlisting}                                                      
+\begin{verbatim}                                                      
 sudo apt install build-essential cmake python python-matplotlib 
 libtool libcoin80-dev libsoqt4-dev libxerces-c-dev libboost-dev 
 libboost-filesystem-dev libboost-regex-dev libboost-program-options-dev 
@@ -246,19 +246,20 @@ libpyside-dev libode-dev swig libzipios++-dev libfreetype6
 libfreetype6-dev liboce-foundation-dev liboce-modeling-dev 
 liboce-ocaf-dev liboce-visualization-dev liboce-ocaf-lite-dev 
 libsimage-dev checkinstall python-pivy python-qt4 doxygen libspnav-d              
-\end{lstlisting} 
+\end{verbatim} 
 Compiling:
 Now first we’ll create a separate directory for storing our build files. 
 This will be out-of-source build. Which means the source code directory 
 will not get modified and there won’t be any issue with git.
-\begin{lstlisting} 
+\begin{verbatim} 
 mkdir build
 cd build
 cmake ../free-cad-code
 make
-\end{lstlisting} 
+\end{verbatim} 
 Execution:
 Execute using the following command:
-\begin{lstlisting}                                                      
+\begin{verbatim}                                                      
 ./bin/FreeCAD
-\end{lstlisting}                                                      
+\end{verbatim} 
+\end{comment}                                                     

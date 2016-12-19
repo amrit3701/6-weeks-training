@@ -12,7 +12,7 @@
 \usepackage{verbatim}
 %Options: Sonny, Lenny, Glenn, Conny, Rejne, Bjarne, Bjornstrup
 \usepackage[Glenn]{fncychap}
-\lhead{\large\bfseries Drawing FreeCAD}
+\lhead{\large\bfseries SIM}
 \usepackage[left=2.5cm, right=1.5cm, top=2.5cm, bottom=1.5cm]{geometry}
 \pagestyle{fancy}
 %\end{print}
@@ -51,6 +51,8 @@
 \newpage
 \listoffigures
 \newpage
+\listoftables   
+\newpage
 
 \pagenumbering{arabic}
 \cfoot{\thepage}
@@ -66,20 +68,37 @@
 \input{input/librecad.tex}
 %\chapter{Requirements and Analysis}
 %\input{input/req-n-ana.tex}
-\chapter{Project Work}
+\chapter{Project Design}
 \input{input/vedit.tex}
 %\input{input/loadsave.tex}
 %\input{input/lualogo.tex}
 %\input{input/hatching.tex}
-\newpage
-\chapter{Technologies Used}
+%\newpage
+\chapter{DEVELOPMENT AND IMPLEMENTATION}
+\section{Python}
+\input {input/python-intro.tex} 
 \input{input/inkscape.tex}
+\section[Front End Languages and Framework]{Front End Languages         
+and Framework \footnote{ Used in project but not by me accept           
+basic HTML}} 
+\input {input/frontend.tex} 
+
+\section{Introduction to Django}                                        
+\input {input/django-intro.tex}   
 %\input{input/qt.tex}
-\newpage
+%\newpage
 \input{input/latex.tex}
 %\input{input/tech/lua.tex}
 %\input{input/cairo.tex}
 \input{input/tech/git.tex}
+
+\section{Implementation}                                                
+\input{input/implementation.tex}
+\newpage
+\section{Testing}                                                
+\input{input/test.tex}
+
+
 %Github\\
 %IRC\\
 %\LaTeX\\
@@ -90,11 +109,13 @@
 %\input{input/design.tex}
 %\chapter{Implementation}
 %\input{input/implement.tex}
-\chapter{Project Legacy}
-\input{input/legacy.tex}
-\input{input/ubuntu.tex}
-\input{input/irc.tex}
-\input{input/shell.tex}
+\chapter{CONCLUSION AND FUTURE SCOPE}
+\input{input/conclusion.tex}
+
+%\input{input/legacy.tex}
+%\input{input/ubuntu.tex}
+%\input{input/irc.tex}
+%\input{input/shell.tex}
 %\input{input/future.tex}
 \input{input/bibliography.tex}
 \end{document}

@@ -1,0 +1,63 @@
+Testing a program consists of providing the program with a set of test inputs (or test cases) and
+observing if the program behaves as expected. If the program fails to behave as expected, then the
+conditions under which failure occurs are noted for later debugging and correction. 
+
+
+This software had been taken through rigorous test to fully found potential causes of error and system failure
+and full focus have been given to cover all possible exceptions that can 
+occur and cause failure of the software.
+As this software is based on intensive background process it have been taken care that 
+if correct input and email address are given then processing of user job can even continue or a least automatically 
+restart even after server shuts down or even crash.
+
+SIM communicates with the database back at the server end and interact to store and retrieve information. A processing of the file is considered complete only if all of the file has been parsed, it database objects has been created by the corresponding function and the objects have been properly transferred to the database at the back end. If this is not the case then no changes shall be made to the database and its consistent state must be maintained.
+
+If the system recognizes that the file in consideration is not correct then it must point that out to the user and also be able to tell that in what manner is the file wrong. For example, if the file is wrong syntactically then the correct syntactic suggestion must be provided to the user.  If the file is not complete then simply a message must be passed to the user.
+
+\begin{table}
+\begin{tabular}{|p{1.5cm}|p{2cm}|p{5cm}|p{5cm}|p{1.5cm}|} 
+\hline
+Test Case ID & Test Case Name & Description & Expected Result
+ & Status \\ 
+
+  
+  \hline \rule[-2ex]{0pt}{5.5ex}  MA001 & Change file &
+   The user must be able to change the working file without having to restart the system every time. This means that there must be navigational features in the system to move back and forth with different files in the same session.
+   & Without having to create a new session the user must be able to change the working files.
+   &
+   Passed \\
+   \hline
+
+   \rule[-2ex]{0pt}{5.5ex}  MA002 & valid file
+   &
+   The file provided by the user maybe half complete and/or with errors or outright empty. So the system must be able recognize these issues and offer the correct error message in response.
+   & The system must accept those files that are correct and complete otherwise proper redirection to the home page with an error message must be provided.
+
+   &
+   Passed \\
+
+   \hline
+    
+    \rule[-2ex]{0pt}{5.5ex}  MA003 & query proccessing
+    &
+    The user must be able to apply queries on the information stored in the databases. 
+    &
+    All user queries that are valid must be answered properly
+    &
+    Passed \\
+     
+      \hline
+       \rule[-2ex]{0pt}{5.5ex}  MA004 & File retrival
+        & 
+         Just like in a query when the user retrieves certain information about the structure from the database, the user should be able if he/she wishes to, construct a whole, complete file from the information stored in the database.
+          
+           & The whole file must be created from the informtion in the database &
+            Passed \\
+              
+
+              \hline
+
+              \end{tabular}
+
+\caption{Integration testing}
+              \end{table}

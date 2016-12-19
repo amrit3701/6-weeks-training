@@ -3,19 +3,39 @@
 \contentsline {figure}{\numberline {1.2}{\ignorespaces Testing and Consultancy Cell}}{2}{figure.1.2}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Front page}}{12}{figure.3.1}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Example of Part shapes in FreeCAD}}{12}{figure.3.2}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Example of Drawing module in FreeCAD}}{13}{figure.3.3}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Example of python scripting}}{14}{figure.3.4}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Example of building macro}}{15}{figure.3.5}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Example of drawing macro}}{15}{figure.3.6}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Data flow LEVEL 0}}{10}{figure.3.1}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Data Flow LEVEL 1}}{11}{figure.3.2}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Donald Knuth, Inventor Of T\kern -.1667em\lower .5ex\hbox {E}\kern -.125emX\spacefactor \@m {} typesetting system}}{20}{figure.4.1}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces \LaTeX {} output of above program.}}{21}{figure.4.2}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Texmaker, A Graphical \LaTeX {} Editor}}{22}{figure.4.3}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces LEd, A Graphical \LaTeX {} Editor}}{23}{figure.4.4}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Web based graphic generation using \LaTeX {}(input page)}}{24}{figure.4.5}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Github Logo}}{24}{figure.4.6}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Git Logo}}{26}{figure.4.7}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Python logo}}{12}{figure.4.1}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Example of Part shapes in FreeCAD}}{15}{figure.4.2}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Example of Drawing module in FreeCAD}}{15}{figure.4.3}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Example of python scripting}}{16}{figure.4.4}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Example of building macro}}{17}{figure.4.5}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Example of drawing macro}}{18}{figure.4.6}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces C++ Logo}}{21}{figure.4.7}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces HTML5 logo}}{22}{figure.4.8}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces CSS logo}}{23}{figure.4.9}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Javascript logo}}{24}{figure.4.10}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Django logo}}{24}{figure.4.11}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Output of runserver}}{26}{figure.4.12}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Donald Knuth, Inventor Of T\kern -.1667em\lower .5ex\hbox {E}\kern -.125emX\spacefactor \@m {} typesetting system}}{28}{figure.4.13}
+\contentsline {figure}{\numberline {4.14}{\ignorespaces \LaTeX {} output of above program.}}{29}{figure.4.14}
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Texmaker, A Graphical \LaTeX {} Editor}}{30}{figure.4.15}
+\contentsline {figure}{\numberline {4.16}{\ignorespaces LEd, A Graphical \LaTeX {} Editor}}{31}{figure.4.16}
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Web based graphic generation using \LaTeX {}(input page)}}{32}{figure.4.17}
+\contentsline {figure}{\numberline {4.18}{\ignorespaces Github Logo}}{32}{figure.4.18}
+\contentsline {figure}{\numberline {4.19}{\ignorespaces Git Logo}}{34}{figure.4.19}
+\contentsline {figure}{\numberline {4.20}{\ignorespaces Front page}}{37}{figure.4.20}
+\contentsline {figure}{\numberline {4.21}{\ignorespaces Result show on submitted the Staad.Pro file}}{38}{figure.4.21}
+\contentsline {figure}{\numberline {4.22}{\ignorespaces Query page}}{39}{figure.4.22}
+\contentsline {figure}{\numberline {4.23}{\ignorespaces Result of query}}{39}{figure.4.23}
+\contentsline {figure}{\numberline {4.24}{\ignorespaces Form to enter the specifications of the building}}{40}{figure.4.24}
+\contentsline {figure}{\numberline {4.25}{\ignorespaces Form to enter the specifications of the building}}{40}{figure.4.25}
+\contentsline {figure}{\numberline {4.26}{\ignorespaces Opening .fcstd file in FreeCAD}}{41}{figure.4.26}
+\contentsline {figure}{\numberline {4.27}{\ignorespaces Admin page}}{41}{figure.4.27}
+\contentsline {figure}{\numberline {4.28}{\ignorespaces Login page}}{42}{figure.4.28}
+\contentsline {figure}{\numberline {4.29}{\ignorespaces Entities of Staad Pro}}{43}{figure.4.29}
+\contentsline {figure}{\numberline {4.30}{\ignorespaces Attributes of each entity}}{43}{figure.4.30}
+\contentsline {figure}{\numberline {4.31}{\ignorespaces Modification, creation and deleting entity}}{44}{figure.4.31}
 \addvspace {10\p@ }
 \contentsfinish 
